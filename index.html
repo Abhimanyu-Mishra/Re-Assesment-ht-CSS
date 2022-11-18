@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(18, 58, 61);
+        }
+         .main{
+            margin-top: 300px;
+            
+         }
+         .circle{
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            background:url("https://img.freepik.com/premium-photo/milky-way-galaxy-sky-night_63047-2169.jpg?w=900");
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+         #cartoon{
+            position: relative;
+            top: -200px;
+            width: 200px;
+            animation: 3s cart infinite;
+         }
+         #moonimg{
+            position: relative;
+            top: -382px;
+            width: 144px;
+            right: 46px;
+         }
+         @keyframes cart {
+            0%{
+                transform: translateY(15px);
+            }
+            35%{
+                transform: translateY(20px);
+            }
+            100%{
+                transform: translateY(-40px);
+            }
+         }
+         #btn{
+            position:absolute;
+            top: 40px;
+            right: 40px;
+            background-color: aqua;
+            height: 30px;
+
+         }
+         @media only screen and (max-width:400px) {
+            #moonimg{
+            position: relative;
+            top:-540px;
+            left:80px;
+            }
+         }
+
+    </style>
+</head>
+<body>
+    
+
+        <center>
+            <button id="btn"><b>WATCH MORE</b></button>
+            <div class="main">
+                <div class="circle">
+
+                </div>
+                <img id="fir-img" src= alt="Next">
+                <img id="cartoon" src="./Astronaut-cartoon.png" alt="Cartoon">
+                <img id="moonimg" src="./Moon.png" alt="moonS">
+            </div>
+        </center>
+    
+</body>
+</html>
